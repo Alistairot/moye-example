@@ -6,7 +6,7 @@ export class AfterSingletonAddHandler extends AEventHandler<AfterSingletonAdd>{
     protected run(scene: Scene, args: AfterSingletonAdd) {
         switch (args.singletonType) {
             case Logger: {
-                Logger.getInst().iLog = new CocosLogger();
+                Logger.get().iLog = new CocosLogger();
                 log('init cocos logger');
                 break
             }

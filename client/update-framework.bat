@@ -1,1 +1,2 @@
-npm update github:Alistairot/moye-client
+npm uninstall github:Alistairot/moye-client
+npm i github:Alistairot/moye-client
