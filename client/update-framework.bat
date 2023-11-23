@@ -1,0 +1,1 @@
+npm update github:Alistairot/moye-client
