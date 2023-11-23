@@ -1,0 +1,1 @@
+place scripts that do not rely on the cocos engine
