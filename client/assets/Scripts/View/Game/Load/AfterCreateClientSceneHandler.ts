@@ -1,10 +1,10 @@
-import { EventDecorator, AfterCreateClientScene, SceneType, AEventHandler, Scene, log } from "moye";
-import { MoyeViewMgr } from "../../Module/MoyeView/MoyeViewMgr";
+import { EventDecorator, AfterCreateClientScene, SceneType, AEventHandler, Scene, log, MoyeViewMgr } from "moye";
+import { ViewName } from "../UI/ViewName";
 
 @EventDecorator(AfterCreateClientScene, SceneType.CLIENT)
 export class AfterCreateClientSceneHandler extends AEventHandler<AfterCreateClientScene>{
     protected run(scene: Scene, args: AfterCreateClientScene) {
         log('scene created', scene);
-        scene.addCom(MoyeViewMgr);
+        MoyeViewMgr.inst.show(ViewName.Login);
     }
 }
