@@ -1,0 +1,24 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "ea512a1d-3753-4a6e-8123-2b17e5d1f6ce",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleFilterConfig": [
+      {
+        "range": "exclude",
+        "type": "url",
+        "patchOption": {
+          "patchType": "glob",
+          "value": "db://assets/**/*.MD"
+        },
+        "assets": [
+          ""
+        ]
+      }
+    ]
+  }
+}

@@ -6,13 +6,17 @@ const { ccclass, property } = _decorator;
 export class Init extends Component {
     start() {
         Program.init(this.node);
-        Program.start();
-
+        this.startAsync();
         // MoyeAssets.loadAssetAsync(ImageAsset, 'Images/loading/wait_1').then((res) => {
         //     console.log(res);
         // });
         // MoyeAssets.loadAssetAsync(SpriteFrame, 'Images/toggle_2_1').then((res) => {
         //     console.log(res);
         // });
+    }
+
+    private async startAsync(){
+        await MoyeAssets.loadBundleAsync('Code');
+        Program.start();
     }
 }

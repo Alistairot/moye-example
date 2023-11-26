@@ -1,7 +1,7 @@
 import { AEventHandler, AfterSingletonAdd, EventDecorator, Logger, MoyeViewMgr, Root, Scene, SceneType, log } from "moye";
-import { CocosLogger } from "../../Module/Logger/CocosLogger";
 import { find } from "cc";
-import { GlobalViewCfg } from "../../Module/MoyeView/GlobalViewCfg";
+import { CocosLogger } from "./Logger/CocosLogger";
+import { GlobalViewCfg } from "./MoyeView/GlobalViewCfg";
 
 @EventDecorator(AfterSingletonAdd, SceneType.NONE)
 export class AfterSingletonAddHandler extends AEventHandler<AfterSingletonAdd>{
